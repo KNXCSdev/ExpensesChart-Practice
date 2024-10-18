@@ -1,43 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Expenses chart component</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Expenses chart component</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header__balance">
+          <div>
+            <p class="header__description">My balance</p>
+            <p class="header__value"><span>$</span>921.48</p>
+          </div>
+          <img src="images/logo.svg" alt="" />
+        </div>
+      </header>
+      <main class="main">
+        <h1 class="primary-heading">Spending - Last 7 days</h1>
+        <div class="main__grid">
+          <div class="main__graph main__graph--1"></div>
+          <div class="main__graph main__graph--2"></div>
+          <div class="main__graph main__graph--3 main__graph--highest"></div>
+          <div class="main__graph main__graph--4"></div>
+          <div class="main__graph main__graph--5"></div>
+          <div class="main__graph main__graph--6"></div>
+          <div class="main__graph main__graph--7"></div>
+          <p class="main__date">mon</p>
+          <p class="main__date">tue</p>
+          <p class="main__date">wed</p>
+          <p class="main__date">thu</p>
+          <p class="main__date">fri</p>
+          <p class="main__date">sat</p>
+          <p class="main__date">sun</p>
+        </div>
 
-  My balance
-  $921.48
-
-  Spending - Last 7 days
-
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <div class="main__expenses">
+          <div class="main__total">
+            <h2 class="secondary-heading">Total this month</h2>
+            <p class="main__value"><span>$</span>478.33</p>
+          </div>
+          <div class="main__interest">
+            <p class="main__interest-rate">+2.4%</p>
+            <div class="main__month">from last month</div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>
