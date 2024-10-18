@@ -94,6 +94,7 @@ body {
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s;
+    position: relative;
     &--1 {
       grid-row: 6 / 8;
     }
@@ -118,6 +119,17 @@ body {
 
     &:hover {
       background-color: var(--softred2);
+    }
+
+    &__value {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(-10%, -125%);
+      padding: 1rem;
+      background-color: var(--darkbrown);
+      color: var(--verypaleorange);
+      border-radius: 5px;
     }
   }
 
@@ -165,4 +177,8 @@ body {
   &__month {
     color: var(--mediumbrown);
   }
+}
+
+.hidden {
+  display: none;
 }
