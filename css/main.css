@@ -87,6 +87,7 @@ body {
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s;
+  position: relative;
 }
 .main__graph--1 {
   grid-row: 6/8;
@@ -111,6 +112,16 @@ body {
 }
 .main__graph:hover {
   background-color: var(--softred2);
+}
+.main__graph__value {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-10%, -125%);
+  padding: 1rem;
+  background-color: var(--darkbrown);
+  color: var(--verypaleorange);
+  border-radius: 5px;
 }
 .main__graph--highest {
   background-color: var(--cyan);
@@ -148,4 +159,8 @@ body {
 }
 .main__month {
   color: var(--mediumbrown);
+}
+
+.hidden {
+  display: none;
 }
