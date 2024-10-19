@@ -81,7 +81,7 @@ body {
 }
 .main__graph {
   background-color: var(--softred);
-  border-radius: 10px;
+  border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s;
   position: relative;
@@ -100,6 +100,7 @@ body {
   background-color: var(--darkbrown);
   color: var(--verypaleorange);
   border-radius: 5px;
+  z-index: 1;
 }
 .main__graph--highest {
   background-color: var(--cyan);
@@ -144,4 +145,46 @@ body {
 
 .hidden {
   display: none;
+}
+
+@media only screen and (max-width: 50em) {
+  html {
+    font-size: 55%;
+  }
+  .container {
+    max-width: 85%;
+  }
+}
+@media only screen and (max-width: 35em) {
+  html {
+    font-size: 50%;
+  }
+  .container {
+    max-width: 90%;
+  }
+  .primary-heading {
+    font-size: 3rem;
+  }
+  .main__graph {
+    width: 5rem;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .container {
+    max-width: 95%;
+  }
+  .primary-heading {
+    font-size: 2.6rem;
+  }
+  .main__graph {
+    width: 4.5rem;
+  }
+}
+@media only screen and (max-width: 20em) {
+  .main__graph {
+    width: 3.5rem;
+  }
+  .main__graph__value {
+    transform: translate(-25%, -125%);
+  }
 }
