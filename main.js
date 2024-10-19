@@ -7,7 +7,7 @@ async function loadGraphData() {
     const response = await fetch("data.json");
 
     const arr = await response.json();
-
+    console.log(arr);
     const maxAmount = Math.max(...arr.map((item) => item.amount));
 
     const graphElements = document.querySelectorAll(".main__graph");
